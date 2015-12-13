@@ -18,5 +18,5 @@
     "autoload": {
         "psr-4": { "Jovis\\": "src/" }
     },
-    "minimum-stability": "dev",
+    "minimum-stability": "dev"
 }
