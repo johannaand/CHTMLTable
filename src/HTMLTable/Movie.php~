@@ -1,0 +1,12 @@
+<?php
+
+namespace Anax\HTMLTable;
+
+
+
+class Movie extends \Anax\MVC\CDatabaseModel
+{
+  
+}
+
+
