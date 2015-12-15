@@ -1,6 +1,6 @@
 <?php
 
-namespace Jovis/DatabaseModel;
+namespace Jovis\DatabaseModel;
  
 /**
  * Model for databasecommunication.

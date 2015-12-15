@@ -10,20 +10,18 @@ class CHTMLTable{
   
   private $data;
   
-  public function __construct($data){
+  //tar emot en headline som enkel array och data som tvådimensionell array
+  public function __construct($headline, $data){
     $this->data = $data;
+    $this->headline = $headline;
   }
  
  /**
- * Function to create links for sorting
- *
- * @param string $column the name of the database column to sort by
- * @return string with links to order by column.
- */
- 
- /**
-  * skapar en sträng innehållande html-kod för en tabell för att visa resultatet från utsökningen
+  * skapar en tabell (sträng) med rubriker från den endimensionella 
+  * arrayen $headline och innehåll från
+  * den tvådimensionella arrayen $data array
   *
+  * @return string $html, sträng innehållande en tabell
   */
    
   public function getTable(){
@@ -34,12 +32,10 @@ class CHTMLTable{
       <table class>
         <tr class='rows'>";
         
-   foreach($this->data as $d) {
-     foreach ($d as $key=>$value) {
-       $table.= "<th>" . $key ."</th>";
+   foreach($this->headline as $h) {
+      $table.= "<th>" . $h ."</th>";
      }
-     break;
-   }
+   
    $table .= "</tr>";
    foreach($this->data as $d){
      $table .= "<tr>";  
