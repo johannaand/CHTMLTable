@@ -9,11 +9,11 @@ class Movie extends \Jovis\DatabaseModel\CDatabaseModel
          
   public function init()
   {
-    $this->db->dropTableIfExists('Movie')
+    $this->db->dropTableIfExists('movie')
                  ->execute();
         
         $this->db->createTable(
-                        'Movie',
+                        'movis',
                         [
                             'id' => ['integer', 'primary key', 'not null', 'auto_increment'],
                             'title' => ['varchar(100)', 'not null'],
@@ -26,7 +26,7 @@ class Movie extends \Jovis\DatabaseModel\CDatabaseModel
         
         
         $this->db->insert(
-            'Movie',
+            'movie',
             ['title', 'director', 'length', 'year']
          );
             
