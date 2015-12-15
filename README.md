@@ -18,4 +18,4 @@ http://dbwebb.se/opensource/cdatabase for more information.
 
 The front-controller file uses a controller action to initiate the database table for testing.
 
-This package is created as an assignment at course in PHP MVC Framework at Blekingen Tekniska Högskola.
+This package is created as an assignment at a course in PHP MVC Framework at Blekingen Tekniska Högskola.
