@@ -50,7 +50,7 @@ class TableController implements \Anax\DI\IInjectionAware
         break;  
       }
       
-      $this->chtml = new \Jovis\HTMLtable\CHTMLTable($aHeading, $aContent);
+      $this->chtml = new \Jovis\HTMLTable\CHTMLTable($aHeading, $aContent);
       
       $htmltable = $this->chtml->getTable();
       $source = $this->model->getSource();
