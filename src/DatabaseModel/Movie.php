@@ -13,7 +13,7 @@ class Movie extends \Jovis\DatabaseModel\CDatabaseModel
                  ->execute();
         
         $this->db->createTable(
-                        'movis',
+                        'movie',
                         [
                             'id' => ['integer', 'primary key', 'not null', 'auto_increment'],
                             'title' => ['varchar(100)', 'not null'],
