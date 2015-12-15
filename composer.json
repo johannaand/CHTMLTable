@@ -12,7 +12,8 @@
         }
     ],
     "require": {
-        "php": ">=5.4"
+        "php": ">=5.4",
+        "mos/cdatabase": "dev-master"
     },
     "autoload": {
         "psr-4": { "Jovis\\": "src/" }
