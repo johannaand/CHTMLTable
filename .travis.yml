@@ -8,3 +8,5 @@ php:
 
 script:
   -phpunit --bootstrap test/config.php
+
+sudo: required
