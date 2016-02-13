@@ -76,8 +76,10 @@ class CDatabaseModel implements \Anax\DI\IInjectionAware
    */
     public function save($values = [])
     {
+
     $this->setProperties($values);
     $values = $this->getProperties();
+
  
     if (isset($values['id'])) {
         return $this->update($values);
@@ -137,7 +139,7 @@ class CDatabaseModel implements \Anax\DI\IInjectionAware
    */
   public function update($values)
   {
-      $keys   = array_keys($values);
+		$keys   = array_keys($values);
       $values = array_values($values);
    
       // Its update, remove id and use as where-clause

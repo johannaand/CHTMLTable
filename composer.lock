@@ -1,0 +1,259 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
+    ],
+    "hash": "b0aa5b2891c55b59f6f1f75171383f32",
+    "content-hash": "f5bda3478f5fe285ef2725c440713b4e",
+    "packages": [
+        {
+            "name": "anax/mvc",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/mosbth/Anax-MVC.git",
+                "reference": "02acc3fe02ffcca636f3fabaff420e1b22e92c07"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/mosbth/Anax-MVC/zipball/02acc3fe02ffcca636f3fabaff420e1b22e92c07",
+                "reference": "02acc3fe02ffcca636f3fabaff420e1b22e92c07",
+                "shasum": ""
+            },
+            "require": {
+                "mos/cform": "2.x-dev",
+                "mos/ctextfilter": "dev-master",
+                "php": ">=5.4"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Anax\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Mikael Roos",
+                    "email": "me@mikaelroos.se",
+                    "homepage": "http://mikaelroos.se",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Webtemplate to create websites",
+            "homepage": "http://dbwebb.se",
+            "keywords": [
+                "boilerplate",
+                "education",
+                "framework",
+                "micro",
+                "mvc"
+            ],
+            "time": "2016-01-26 09:25:48"
+        },
+        {
+            "name": "michelf/php-markdown",
+            "version": "1.5.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/michelf/php-markdown.git",
+                "reference": "e1aabe18173231ebcefc90e615565742fc1c7fd9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/michelf/php-markdown/zipball/e1aabe18173231ebcefc90e615565742fc1c7fd9",
+                "reference": "e1aabe18173231ebcefc90e615565742fc1c7fd9",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-lib": "1.4.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Michelf": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "John Gruber",
+                    "homepage": "http://daringfireball.net/"
+                },
+                {
+                    "name": "Michel Fortin",
+                    "email": "michel.fortin@michelf.ca",
+                    "homepage": "https://michelf.ca/",
+                    "role": "Developer"
+                }
+            ],
+            "description": "PHP Markdown",
+            "homepage": "https://michelf.ca/projects/php-markdown/",
+            "keywords": [
+                "markdown"
+            ],
+            "time": "2015-03-01 12:03:08"
+        },
+        {
+            "name": "mos/cdatabase",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/mosbth/cdatabase.git",
+                "reference": "0504c0ccad80783674a36bd701d884d6bbadbd55"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/mosbth/cdatabase/zipball/0504c0ccad80783674a36bd701d884d6bbadbd55",
+                "reference": "0504c0ccad80783674a36bd701d884d6bbadbd55",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Mos\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Mikael Roos",
+                    "email": "me@mikaelroos.se",
+                    "homepage": "http://mikaelroos.se",
+                    "role": "Developer"
+                }
+            ],
+            "description": "PHP classes for database handling upon PDO",
+            "homepage": "http://dbwebb.se",
+            "keywords": [
+                "education",
+                "framework",
+                "micro",
+                "module",
+                "mvc"
+            ],
+            "time": "2016-02-03 15:52:43"
+        },
+        {
+            "name": "mos/cform",
+            "version": "2.x-dev",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/mosbth/cform.git",
+                "reference": "0427e0011b97a2ab10c4c7a1cb0a2dbdfa83e727"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/mosbth/cform/zipball/0427e0011b97a2ab10c4c7a1cb0a2dbdfa83e727",
+                "reference": "0427e0011b97a2ab10c4c7a1cb0a2dbdfa83e727",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Mos\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Mikael Roos",
+                    "email": "me@mikaelroos.se",
+                    "homepage": "http://mikaelroos.se",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Classes for HTML Forms",
+            "homepage": "http://dbwebb.se/",
+            "keywords": [
+                "Forms",
+                "education",
+                "html"
+            ],
+            "time": "2016-01-15 11:53:19"
+        },
+        {
+            "name": "mos/ctextfilter",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/mosbth/ctextfilter.git",
+                "reference": "e2a82f8c88b4c727d40c6c997f2b867949ecfead"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/mosbth/ctextfilter/zipball/e2a82f8c88b4c727d40c6c997f2b867949ecfead",
+                "reference": "e2a82f8c88b4c727d40c6c997f2b867949ecfead",
+                "shasum": ""
+            },
+            "require": {
+                "michelf/php-markdown": "1.5.*",
+                "php": ">=5.4"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Mos\\TextFilter\\": "src/TextFilter"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Mikael Roos",
+                    "email": "mos@dbwebb.se",
+                    "homepage": "http://mikaelroos.se",
+                    "role": "Developer"
+                }
+            ],
+            "description": "PHP classes for text filtering and formatting to HTML",
+            "homepage": "http://dbwebb.se",
+            "keywords": [
+                "bbcode",
+                "education",
+                "markdown",
+                "shortcode"
+            ],
+            "time": "2016-01-11 16:33:31"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "dev",
+    "stability-flags": {
+        "mos/cdatabase": 20,
+        "anax/mvc": 20
+    },
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": {
+        "php": ">=5.4"
+    },
+    "platform-dev": []
+}
