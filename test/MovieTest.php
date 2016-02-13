@@ -162,8 +162,8 @@ class MovieTest extends \PHPUnit_Framework_TestCase
     {
 		self::$movie->init();
 		$resA = self::$movie->query('id')->where("title = 'Mammas drömmar'")->andwhere("length = 25")->execute();
-		//	->where("title = Mammas drömmar")->andwhere("length = 25");
-		$res;
+
+		$res = '';
 
 		foreach($resA as $key=>$val){
 			foreach($val as $v=>$r){
