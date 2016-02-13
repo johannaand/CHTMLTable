@@ -6,7 +6,10 @@ php:
   - '7.0'
   - hhvm
 
+before_script:
+    - composer update --no-dev
+
 script:
-  -phpunit --bootstrap test/config.php
+  - phpunit --bootstrap test/config.php
 
 sudo: required
