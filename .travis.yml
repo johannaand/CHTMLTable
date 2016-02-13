@@ -7,4 +7,4 @@ php:
   - hhvm
 
 script:
-	-phpunit --bootstrap test/config.php
+  -phpunit --bootstrap test/config.php
