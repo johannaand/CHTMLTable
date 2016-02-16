@@ -28,6 +28,8 @@ class TableController implements \Anax\DI\IInjectionAware
    
       $all = $this->model->findAll();
       
+      $aContent = array();
+      
       //gör om arrayen av objekt till en array av arrayer
       foreach ($all as $key1=>$value) {
         foreach ($value as $key2=>$v){

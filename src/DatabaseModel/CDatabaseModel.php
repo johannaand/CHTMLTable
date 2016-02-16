@@ -125,7 +125,7 @@ class CDatabaseModel implements \Anax\DI\IInjectionAware
    
       $res = $this->db->execute($values);
    
-      $this->id = $this->db->lastInsertId();
+      $id = $this->db->lastInsertId();
    
       return $res;
   }
@@ -220,7 +220,7 @@ class CDatabaseModel implements \Anax\DI\IInjectionAware
   /**
    * Execute the query built.
    *
-   * @param string $query custom query.
+   * @param array $params 
    *
    * @return $this
    */
