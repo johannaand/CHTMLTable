@@ -10,6 +10,7 @@ class CDatabaseModel implements \Anax\DI\IInjectionAware
 {
     use \Anax\DI\TInjectable;
  
+  //private $id;
     
     
    /**
@@ -139,7 +140,7 @@ class CDatabaseModel implements \Anax\DI\IInjectionAware
    */
   public function update($values)
   {
-		$keys   = array_keys($values);
+	  $keys   = array_keys($values);
       $values = array_values($values);
    
       // Its update, remove id and use as where-clause
@@ -232,4 +233,3 @@ class CDatabaseModel implements \Anax\DI\IInjectionAware
   }
 
 }
-?>

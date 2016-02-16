@@ -9,6 +9,7 @@ namespace Jovis\HTMLTable;
 class CHTMLTable{ 
   
   private $data;
+  private $headline;
   
   //tar emot en headline som enkel array och data som tvådimensionell array
   public function __construct($headline, $data){
@@ -25,9 +26,7 @@ class CHTMLTable{
   */
    
   public function getTable(){
-    
-    $table = "";
-    
+       
     $table = "<div class='dbtable'>
       <table class>
         <tr class='rows'>";

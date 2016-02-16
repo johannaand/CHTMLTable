@@ -9,6 +9,8 @@ namespace Jovis\HTMLTable;
 class TableController implements \Anax\DI\IInjectionAware
 {
     use \Anax\DI\TInjectable;
+    
+    private $model;
       
    /**
    * Lists all instances of the model, (databasetable) except for noListing.
@@ -25,8 +27,6 @@ class TableController implements \Anax\DI\IInjectionAware
       $this->model->setDI($this->di);
    
       $all = $this->model->findAll();
-      
-      $aContent;
       
       //gör om arrayen av objekt till en array av arrayer
       foreach ($all as $key1=>$value) {
@@ -50,9 +50,9 @@ class TableController implements \Anax\DI\IInjectionAware
         break;  
       }
       
-      $this->chtml = new \Jovis\HTMLTable\CHTMLTable($aHeading, $aContent);
+      $chtml = new \Jovis\HTMLTable\CHTMLTable($aHeading, $aContent);
       
-      $htmltable = $this->chtml->getTable();
+      $htmltable = $chtml->getTable();
       $source = $this->model->getSource();
       
    
@@ -68,5 +68,3 @@ class TableController implements \Anax\DI\IInjectionAware
     $model->init();
   }
 }
-
-?>
