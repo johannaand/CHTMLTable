@@ -10,7 +10,7 @@ class CDatabaseModel implements \Anax\DI\IInjectionAware
 {
     use \Anax\DI\TInjectable;
  
-  //private $id;
+  public $id;
     
     
    /**
@@ -80,7 +80,6 @@ class CDatabaseModel implements \Anax\DI\IInjectionAware
 
     $this->setProperties($values);
     $values = $this->getProperties();
-
  
     if (isset($values['id'])) {
         return $this->update($values);
@@ -125,7 +124,7 @@ class CDatabaseModel implements \Anax\DI\IInjectionAware
    
       $res = $this->db->execute($values);
    
-      $id = $this->db->lastInsertId();
+      $this->id = $this->db->lastInsertId();
    
       return $res;
   }
@@ -140,13 +139,15 @@ class CDatabaseModel implements \Anax\DI\IInjectionAware
    */
   public function update($values)
   {
+	  
 	  $keys   = array_keys($values);
       $values = array_values($values);
    
       // Its update, remove id and use as where-clause
       unset($keys['id']);
+      
       $values[] = $this->id;
-   
+      
       $this->db->update(
           $this->getSource(),
           $keys,
