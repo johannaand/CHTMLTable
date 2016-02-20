@@ -41,3 +41,7 @@ In your composer.json-file, added those lines to make the package work:
 The front-controller file uses a controller action to initiate the database table for testing.
 
 This package is created as an assignment at a course in PHP MVC Framework at Blekingen Tekniska Högskola.
+
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/johannaand/CHTMLTable/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/johannaand/CHTMLTable/?branch=master)
+[![Code Coverage](https://scrutinizer-ci.com/g/johannaand/CHTMLTable/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/johannaand/CHTMLTable/?branch=master)
+[![Build Status](https://scrutinizer-ci.com/g/johannaand/CHTMLTable/badges/build.png?b=master)](https://scrutinizer-ci.com/g/johannaand/CHTMLTable/build-status/master)
